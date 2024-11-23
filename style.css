@@ -1,9 +1,12 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 50px;
+section {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-bottom: 1px solid #ccc;
+}
+h1, h2 {
+    color: #333;
 }
 a {
-    color: blue;
-    text-decoration: none;
+    color: #0073e6;
 }
