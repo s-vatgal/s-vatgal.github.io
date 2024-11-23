@@ -1,43 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <!-- About Me Section -->
     <section id="about">
         <h1>About Me</h1>
-        <p>Hello, I'm a backend engineer specializing in scalable system design and efficient database solutions. I have expertise in Python, AWS, and Snowflake. I'm passionate about solving real-world problems through technology.</p>
+        <p>Hello, I am a backend engineer with expertise in Python, AWS, and Snowflake.</p>
     </section>
+    
+    <!-- Toggle Button -->
+    <button id="toggleButton">Show/Hide About Me</button>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>Project 1:</strong> <a href="https://github.com/<your-username>/project1" target="_blank">Inventory Management System</a>  
-                - A robust backend system to manage stock for e-commerce platforms.
-            </li>
-            <li>
-                <strong>Project 2:</strong> <a href="https://github.com/<your-username>/project2" target="_blank">Data Pipeline Automation</a>  
-                - Automates data ingestion and transformation using AWS Glue and Snowflake.
-            </li>
-        </ul>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog">
-        <h2>Blog</h2>
-        <p>Check out my articles on <a href="https://medium.com/@vatgal" target="_blank">Medium</a>, where I share insights about backend engineering, cloud technologies, and more.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></p>
-        <p>GitHub: <a href="https://github.com/<your-username>" target="_blank">github.com/<your-username></a></p>
-    </section>
+    <script>
+        // jQuery to toggle the visibility of the About Me section
+        $(document).ready(function() {
+            $("#toggleButton").click(function() {
+                $("#about").toggle(); // Toggle the visibility of the "about" section
+            });
+        });
+    </script>
 </body>
 </html>
